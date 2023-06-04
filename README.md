@@ -18,7 +18,7 @@ And follow the instructions
 
 ... Or
 
-## Copy into .gitconfig
+### Copy into .gitconfig
 
 Just copy the aliases from this `.gitconfig` into your `.gitconfig`. 
 
