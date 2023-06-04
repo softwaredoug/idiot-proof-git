@@ -67,3 +67,9 @@ Useful to browse issues, PRs, etc on that repo.
 ### 'git amend'
 
 Amend the last commit with a new change.
+
+## Philosophy
+
+* Just solve the 80% use case most people have for interacting/syncing with remotes
+* Don't replace git, just augment it
+* Expect users to use git for anything beyond the 80%, which will be most of the time
