@@ -28,7 +28,7 @@ Adds shortcuts for a rebase-based workflow. Assumes a 'trunk' of develompment at
 
 ### 'git publish' or 'git pub'
 
-Pushes changes to the current branch, rejects if current branch is not up to date. See [force-with-lease](https://itnext.io/git-force-vs-force-with-lease-9d0e753e8c41?gi=569651c36210)
+Pushes local changes to the current branch. Rejects if local branch is not up to date (ie your buddy made changes). See [force-with-lease](https://itnext.io/git-force-vs-force-with-lease-9d0e753e8c41?gi=569651c36210)
 
 ### 'git synced'
 
