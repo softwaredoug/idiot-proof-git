@@ -46,11 +46,13 @@ Sync this branch with it's remote. So if your buddy is working on this branch to
 
 Loads a diff to open PR / shortcut to the current PR
 
-[Inspired by this shortcut](https://salferrarello.com/git-alias-open-pull-request-github)
+[Inspired by this shortcut](https://salferrarello.com/git-alias-open-pull-request-github). Useful to jump to the PR to see review comments, create a PR, or view a diff in Github.
 
 ### 'git hub'
 
 Opens the trunkiest-trunk available on Github (prefes upstream to remote; prefers github.com to your Github enterprise if available)
+
+Useful to browse issues, PRs, etc on that repo.
 
 ### 'git squash'
 
