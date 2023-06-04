@@ -26,7 +26,7 @@ If applicable, replace the `enterprisehost = "!echo 'your.enterprise.host'"`, to
 
 ## How it works
 
-Adds shortcuts for a rebase-based workflow. Assumes a 'trunk' of develompment at either origin or upstream remotes. Assumes Github and/or Github Enterprise.
+Adds shortcuts for a rebase workflow. Assumes a 'trunk' of develompment at either origin or upstream remotes. Assumes Github and/or Github Enterprise.
 
 ### 'git publish' or 'git pub'
 
