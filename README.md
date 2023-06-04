@@ -30,17 +30,17 @@ Adds shortcuts for a rebase workflow. Assumes a 'trunk' of develompment at eithe
 
 ### 'git publish' or 'git pub'
 
-Pushes local changes to the current branch. Rejects if local branch is not up to date (ie your buddy made changes). See [force-with-lease](https://itnext.io/git-force-vs-force-with-lease-9d0e753e8c41?gi=569651c36210)
+Pushes local changes to the current branch at origin. Rejects if local branch is not up to date (ie your buddy made changes). See [force-with-lease](https://itnext.io/git-force-vs-force-with-lease-9d0e753e8c41?gi=569651c36210)
 
 ### 'git synced'
 
-Sync up with the trunkiest-trunk available. Either master or main on origin. If you have 'upstream' it prefers the upstream. 
+Sync up current branch corresponding branch at trunkiest-trunk available. Either master or main on origin. If you have 'upstream' it prefers the upstream. 
 
 Does a rebase with main/master on that remote.
 
 ### 'git update'
 
-Sync this branch with it's remote. So if your buddy is working on this branch too, you can get their changes.
+Sync this branch with it's corresponding branch at origin. So if your buddy is working on this branch too, you can get their changes.
 
 ### 'git pr'
 
