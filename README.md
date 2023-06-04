@@ -2,7 +2,7 @@
 
 Alias-based [opinionated git](https://softwaredoug.com/blog/2022/11/09/idiot-proof-git-aliases.html).
 
-This is a dead-simple way of idiot-proofing your git experience with git aliases. No extra tools, no fuss, just standardized, opinionated aliases.
+Idiot-proofing your git experience with git aliases. No extra tools, no fuss, just standardized, opinionated aliases - for OSX users that use Github or Github Enterprise.
 
 ## Installation and updating
 
