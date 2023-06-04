@@ -2,7 +2,7 @@
 
 Alias-based [opinionated git](https://softwaredoug.com/blog/2022/11/09/idiot-proof-git-aliases.html).
 
-Idiot-proofing your git experience with git aliases. No extra tools, no fuss, just standardized, opinionated aliases - for OSX users that use Github or Github Enterprise.
+Idiot-proofing your git experience with git aliases. No extra tools, no fuss, just standardized, opinionated aliases - for OSX users that use Github or Github Enterprise. Automagically uses the right 'trunk' for the situation - (upstream or origin, master or main...) - without you having to remember all that jazz.
 
 ## Installation and updating
 
