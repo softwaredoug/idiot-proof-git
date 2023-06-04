@@ -34,7 +34,7 @@ Pushes local changes to the current branch at origin. Rejects if local branch is
 
 ### 'git synced'
 
-Sync up current branch corresponding branch at trunkiest-trunk available. Either master or main on origin. If you have 'upstream' it prefers the upstream. 
+Sync up current branch corresponding branch at trunkiest-trunk available. Either master or main. If you have 'upstream' it prefers the upstream, but falls back to origin.
 
 Does a rebase with main/master on that remote.
 
