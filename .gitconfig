@@ -1,0 +1,66 @@
+# IDIOT_PROOF_GIT_BEGIN
+[alias]
+  # *********************
+  # Abbreviations
+    co = checkout
+    ci = commit
+    st = status
+    statu = status
+    stat = status
+    sta = status
+  
+  # ********************
+  # Amend shortcuts
+    ammend = commit --amend 
+    amend = commit --amend 
+
+  # *********************
+  # Logging and branches
+    bruh = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+  # *********************
+  # Clean up local branches
+    cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|main' | xargs -n 1 -r git branch -d"
+    clean-all = "!git branch | grep  -v '\\*\\|master\\|main' | xargs -n 1 -r git branch -D"
+
+  # *********************
+  # What is 'trunk'?
+  # Main or Master?; Upstream or origin?
+    mainbranch = "!git remote show origin | sed -n '/HEAD branch/s/.*: //p'"
+    mainremote = "!echo $((git remote get-url upstream > /dev/null 2>&1 && echo 'upstream') || (git remote get-url origin > /dev/null 2>&1 && echo 'origin'))"
+    enterprisehost = "!echo 'your.enterprise.host'"
+
+  # *********************
+  # Rebase workflow
+    synced = "!git pull $((git remote get-url upstream > /dev/null 2>&1 && echo 'upstream') || (git remote get-url origin > /dev/null 2>&1 && echo 'origin')) $(git mainbranch)  --rebase"
+    update = "!git pull origin $(git rev-parse --abbrev-ref HEAD) --rebase"  # Update current branch with remote
+    squash = "!git rebase -v -i $(git mainbranch)"
+    publish = push origin HEAD --force-with-lease 
+    pub = publish 
+
+
+  # *********************
+  # Github shortcuts
+  #  Make / Load PR / diff
+  #    From - https://salferrarello.com/git-alias-open-pull-request-github/
+  #  Go to primary git "hub" (github or enterprisehost)
+    pr = "!f() { \
+       open \"$(git ls-remote --get-url $(git config --get branch.$(git rev-parse --abbrev-ref HEAD).remote) \
+       | sed 's|git@github.com:\\(.*\\)$|https://github.com/\\1|' \
+       | sed 's|git@'$(git enterprisehost)':\\(.*\\)$|https://'$(git enterprisehost)'/\\1|' \
+       | sed 's|\\.git$||'; \
+       )/compare/$(\
+       git symbolic-ref HEAD 2> /dev/null | sed 's|refs/heads/||' \
+       )?expand=1\"; \
+  }; f"
+    hub = "!f() { \
+       open \"$(git ls-remote --get-url $(git mainremote) \
+       | sed 's|git@github.com:\\(.*\\)$|https://github.com/\\1|' \
+       | sed 's|git@'$(git enterprisehost)':\\(.*\\)$|https://'$(git enterprisehost)'/\\1|' \
+       | sed 's|\\.git$||'; \
+       )\"; \
+  }; f"
+# IDIOT_PROOF_GIT_END
