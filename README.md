@@ -44,21 +44,23 @@ Does a rebase with main/master on that remote.
 
 Sync this branch with it's corresponding branch at origin. So if your buddy is working on this branch too, you can get their changes.
 
+### 'git squash'
+
+Squash your changes into a single commit relative to main branch's HEAD commit - starts an interactive rebase relative to that commit.
+
+## Github Shortcuts
+
 ### 'git pr'
 
-Loads a diff to open PR / shortcut to the current PR
+Loads a diff to open/view PR to main (or master) branch at trunkiest trunk.
 
 [Inspired by this shortcut](https://salferrarello.com/git-alias-open-pull-request-github). Useful to jump to the PR to see review comments, create a PR, or view a diff in Github.
 
 ### 'git hub'
 
-Opens the trunkiest-trunk available on Github (prefes upstream to remote; prefers github.com to your Github enterprise if available)
+Opens the trunkiest-trunk available on Github (prefes upstream to origin; prefers github.com to your Github enterprise if available)
 
 Useful to browse issues, PRs, etc on that repo.
-
-### 'git squash'
-
-Squash your changes into a single commit relative to HEAD - starts an interactive rebase.
 
 ## Useful shortcuts
 
