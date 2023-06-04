@@ -16,9 +16,11 @@ Either run
 
 And follow the instructions
 
+... Or
+
 ## Copy into .gitconfig
 
-Just copy the aliases into your `.gitconfig`. 
+Just copy the aliases from this `.gitconfig` into your `.gitconfig`. 
 
 If applicable, replace the `enterprisehost = "!echo 'your.enterprise.host'"`, to point at a Github Enterprise instance
 
