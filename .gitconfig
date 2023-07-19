@@ -32,6 +32,7 @@
     mainbranch = "!git remote show origin | sed -n '/HEAD branch/s/.*: //p'"
     mainremote = "!echo $((git remote get-url upstream > /dev/null 2>&1 && echo 'upstream') || (git remote get-url origin > /dev/null 2>&1 && echo 'origin'))"
     enterprisehost = "!echo 'your.enterprise.host'"
+    trunk = "!git co $(git mainbranch)"  # goto main or master
 
   # *********************
   # Rebase workflow
